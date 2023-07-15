@@ -1,0 +1,3 @@
+POST  http://localhost:8000/v1/auth/signup
+
+Accept: application/json
