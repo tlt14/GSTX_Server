@@ -39,7 +39,7 @@ app.use(AppErrorHandler); // General app error handler
 mongoDB.connect().then(() => {
     app.listen(process.env.PORT, () => {
         console.log(`Server is running on port ${process.env.PORT}`)
-        
     })
-    createAdminUser()
+}).then(() => {
+    createAdminUser()    
 })
